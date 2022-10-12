@@ -121,7 +121,16 @@ var isSubsequence = function(s, t) {
       return false
     }
   }
-  console.log(more4than0([4,0,4,0]));
+//   console.log(more4than0([4,0,4,0]));
   
-  
+function search(budget, prices) {
+    let arr = []
+    for(let i = 0; i < prices.length; i++){
+        if(prices[i] <= budget){
+            arr.push(prices[i])
+        }
+    }
+    return arr
+}
+console.log(search(20, [13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]));
   
